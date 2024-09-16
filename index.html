@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="Assets/PalouseGamingLogo.png" alt="Logo" class="logo">
+            <a href="index.html" class="brand-name">Palouse Gaming</a>
+        </div>
+        
+        <div class="navbar-right">
+            <a href="BeakBonk/beakbonk.html">Beak Bonk</a>
+            <a href="Events/events.html">Events</a>
+            <a href="Ranking/ranking.html">Rankings</a>
+            <a href="Contact/contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="photo-container">
+        <img id="photo" src="Assets/BB24Photos/0.jpg">
+        <button class="arrow left-arrow" onclick="previousPhoto()">&#9664;</button>
+        <button class="arrow right-arrow" onclick="nextPhoto()">&#9654;</button>
+    </div>
+    <section class="about-us">
+        <h2>About Us</h2>
+        <h3>Founded in 2014, Palouse Gaming has been hosting tournaments for over 10 years.</h3>
+        <br>
+        <hr>
+        <p>
+            We're a community-driven platform for gamers of all levels. We organize events, tournaments, and provide rankings for the best gaming experience.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Palouse Gaming. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>

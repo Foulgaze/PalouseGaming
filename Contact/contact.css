@@ -1,0 +1,64 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    color: #333;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1vw;
+    height:calc(100vh);
+}
+
+.content-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact-option {
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-option h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-option img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.contact-option.final {
+    grid-column: 1 / -1; /* Span across all columns */
+}

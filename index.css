@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.5); /* Initial semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease; 
+}
+
+.navbar.scrolled {
+    background-color: rgba(51, 51, 51, 1); 
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.brand-name {
+    color: white;
+    font-size: max(1.5vw , 2vh)!important;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: max(1vw,2vh);
+    position: relative; 
+    padding: 10px 0;
+    transition: color 0.3s ease; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar a:hover {
+    color: #FFD700; 
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    visibility: visible;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    height: calc(100vh);
+    background-color: #f4f4f4;
+    overflow-y: hidden; 
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(51, 51, 51, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    
+}
+
+.arrow:hover {
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.photo-container img {
+    top:0;
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: auto; 
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) 
+{
+    .navbar-right 
+    {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-right a 
+    {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        margin:0;
+    }
+
+    .hamburger 
+    {
+        display: flex;
+    }
+
+    .navbar.active .navbar-right 
+    {
+        display: flex;
+    }
+
+    .navbar a::before,
+    .navbar a::after 
+    {
+        visibility: hidden;
+    }
+
+
+    .photo-container img {
+        width: 100%;
+        height: auto;
+    }
+    .about-us {
+        padding: 30px 15px;
+    }
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+.about-us {
+    background-color: #f4f4f9;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-size: max(2vw,4vh);
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: max(1.5vw,3vh);
+}
+
+
