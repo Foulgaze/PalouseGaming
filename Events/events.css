@@ -40,8 +40,8 @@ body
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px;
     padding: 20px;
-    width: 600px;  /* Set width */
-    height: 600px; /* Set a fixed height */
+    width: 500px;  /* Set width */
+    height: 500px; /* Set a fixed height */
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;  /* Prevent content overflow */
@@ -57,6 +57,7 @@ body
 
 .event-card h2 
 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
@@ -71,19 +72,26 @@ body
 .event-details 
 {
     text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+
 }
 
-.event-details p 
+.event-description
 {
-    font-size: 2rem;
-    line-height: 1.6;
-    color: #555;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-size: max(1.5vw, 2vh);
 }
 
-@media (max-width: 768px) 
+@media (max-width: 1300px) 
 {
+
     .event-card
     {
         height:auto;
     }
 }
+
+
