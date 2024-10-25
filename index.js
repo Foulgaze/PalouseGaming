@@ -9,10 +9,10 @@ window.addEventListener("scroll", (event) => {
   });
 
   const photos = [
-    "Assets/BB24Photos/0.jpg",
-    "Assets/BB24Photos/1.jpg",
-    "Assets/BB24Photos/2.jpg",
-    "Assets/BB24Photos/3.jpg",
+    "Assets/BB24Photos/0.webp",
+    "Assets/BB24Photos/1.webp",
+    "Assets/BB24Photos/2.webp",
+    "Assets/BB24Photos/3.webp",
 ];
 
 let currentPhotoIndex = 0;
