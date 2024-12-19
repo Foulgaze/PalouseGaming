@@ -27,11 +27,52 @@
             <div></div>
         </div>
     </nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let currentSlide = 0;
+        
+            function moveCarousel(direction) {
+                const carousel = document.querySelector('.carousel-images');
+                const totalSlides = carousel.children.length;
+                currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+                carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+        
+            // Attach event listeners to the buttons
+            document.querySelector('.carousel-control.prev').addEventListener('click', () => moveCarousel(-1));
+            document.querySelector('.carousel-control.next').addEventListener('click', () => moveCarousel(1));
+        });
+        </script>
     <div class="content-section">
-        <img src = "../Assets/BB24/UnderConstruction.png">
-        <br>
-        <a target="_blank" rel="noopener noreferrer" href="../Assets/BB24/BeakBonk2024_Summary_1.pdf" class="button" >Financials</a>
-        <br>
+        <img src="../Assets/BB25/BB25_Logo.png" alt="Beak Bonk 2025 Icon" class="tournament-image">
+        <h1>Beak Bonk 2025: The Ultimate Showdown!</h1>
+        <p>Mark your calendars! Beak Bonk 2024 is here to bring you thrilling matches, top-tier competition, and unforgettable moments.</p>
+        
+        <!-- Image Carousel -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="../Assets/GameCards/ult.webp" alt="Super Smash Bros. Ultimate">
+                <img src="../Assets/GameCards/sf6.webp" alt="Street Fighting 6">
+                <img src="../Assets/GameCards/tekken.webp" alt="Tekken">
+                <img src="../Assets/GameCards/melee.webp" alt="Super Smash Bros. Melee">
+                <img src="../Assets/GameCards/rivals.webp" alt="Rivals of Aether">
+                <img src="../Assets/GameCards/brawl.webp" alt="Super Smash Bros. Brawl">
+            </div>
+            <button class="carousel-control prev">&#10094;</button>
+            <button class="carousel-control next">&#10095;</button>
+        </div>
+
+        
+        <h2>Prize Pool</h2>
+        <p>Over <strong>$50,000</strong> in cash prizes! Compete for your share and make history.</p>
+        
+        <h2>Location</h2>
+        <p>Join us at the <strong>Palouse Event Center</strong>, Moscow, Idaho.</p>
+        
+        <h2>Sponsors</h2>
+        <p>Special thanks to our sponsors: <strong>Red Bull, HyperX, and GameStop</strong>.</p>
+        
+        <a target="_blank" rel="noopener noreferrer" href="../Assets/BB24/BeakBonk2024_Summary_1.pdf" class="button">Tournament Overview</a>
     </div>
     <footer class="footer">
         <p>&copy; 2024 Palouse Gaming. All rights reserved.</p>
