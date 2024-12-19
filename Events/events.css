@@ -41,7 +41,7 @@ body
     margin: 20px;
     padding: 20px;
     width: 500px;  
-    height: 500px; 
+    height: 300px; 
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;  
