@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beak Bonk</title>
+    <title>Beak Bonk 2025</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="beakbonk.css">
-    <link rel="icon" type="image/x-icon" href="../Assets/favicon.png">
 </head>
 <body>
     <nav class="navbar" style="background-color: rgba(51, 51, 51, 1); position: sticky">
@@ -14,11 +13,9 @@
             <img src="../Assets/PalouseGamingLogo.png" alt="Logo" class="logo">
             <a href="../index.html" class="brand-name">Palouse Gaming</a>
         </div>
-        
         <div class="navbar-right">
             <a href="../BeakBonk/beakbonk.html">Beak Bonk</a>
             <a href="../Events/events.html">Events</a>
-            <!-- <a href="../Ranking/ranking.html">Rankings</a> -->
             <a href="../Contact/contact.html">Contact</a>
         </div>
         <div class="hamburger">
@@ -27,56 +24,134 @@
             <div></div>
         </div>
     </nav>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            let currentSlide = 0;
-        
-            function moveCarousel(direction) {
-                const carousel = document.querySelector('.carousel-images');
-                const totalSlides = carousel.children.length;
-                currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-                carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-            }
-        
-            // Attach event listeners to the buttons
-            document.querySelector('.carousel-control.prev').addEventListener('click', () => moveCarousel(-1));
-            document.querySelector('.carousel-control.next').addEventListener('click', () => moveCarousel(1));
-        });
-        </script>
-    <div class="content-section">
-        <img src="../Assets/BB25/BB25_Logo.png" alt="Beak Bonk 2025 Icon" class="tournament-image">
-        <h1>Beak Bonk 2025: The Ultimate Showdown!</h1>
-        <p>Mark your calendars! Beak Bonk 2024 is here to bring you thrilling matches, top-tier competition, and unforgettable moments.</p>
-        
-        <!-- Image Carousel -->
-        <div class="carousel">
-            <div class="carousel-images">
-                <img src="../Assets/GameCards/ult.webp" alt="Super Smash Bros. Ultimate">
-                <img src="../Assets/GameCards/sf6.webp" alt="Street Fighting 6">
-                <img src="../Assets/GameCards/tekken.webp" alt="Tekken">
-                <img src="../Assets/GameCards/melee.webp" alt="Super Smash Bros. Melee">
-                <img src="../Assets/GameCards/rivals.webp" alt="Rivals of Aether">
-                <img src="../Assets/GameCards/brawl.webp" alt="Super Smash Bros. Brawl">
+
+    <div class="hero">
+        <img src="../Assets/BB25/BB25_Logo.png" alt="Beak Bonk 2025 Logo">
+        <h1>Beak Bonk 2025</h1>
+        <p>March 1-2, 2025 | Pitman Center, Vandal Gaming Convention</p>
+    </div>
+
+    <div class="prize-banner">
+        $4,000 Prize Pool
+    </div>
+    <div class="games-grid">
+        <div class="game-card">
+            <img src="../Assets/GameCards/ult.webp" alt="Super Smash Bros. Ultimate">
+            <div class="game-info">
+                <h3>Super Smash Bros. Ultimate</h3>
+                <p class = "extra-card-info">Prize Pool: $1,500</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
             </div>
-            <button class="carousel-control prev">&#10094;</button>
-            <button class="carousel-control next">&#10095;</button>
+        </div>
+        <div class="game-card">
+            <img src="../Assets/GameCards/melee.webp" alt="Super Smash Bros. Melee">
+            <div class="game-info">
+                <h3>Super Smash Bros. Melee</h3>
+                <p class = "extra-card-info">Prize Pool: $1000</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="../Assets/GameCards/tekken.webp" alt="Tekken 8">
+            <div class="game-info">
+                <h3>Tekken 8</h3>
+                <p class = "extra-card-info">Prize Pool: $1,000</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="../Assets/GameCards/rivals.webp" alt="RIvals Of Aether II">
+            <div class="game-info">
+                <h3>Rivals of Aether II</h3>
+                <p class = "extra-card-info">Prize Pool: $500</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="../Assets/GameCards/sf6.webp" alt="Street Fighter 6">
+            <div class="game-info">
+                <h3>Street Fighter 6</h3>
+                <p class = "extra-card-info">Prize Pool: TBD</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
+            </div>
         </div>
 
-        
-        <h2>Prize Pool</h2>
-        <p>Over <strong>$50,000</strong> in cash prizes! Compete for your share and make history.</p>
-        
-        <h2>Location</h2>
-        <p>Join us at the <strong>Palouse Event Center</strong>, Moscow, Idaho.</p>
-        
-        <h2>Sponsors</h2>
-        <p>Special thanks to our sponsors: <strong>Red Bull, HyperX, and GameStop</strong>.</p>
-        
-        <a target="_blank" rel="noopener noreferrer" href="../Assets/BB24/BeakBonk2024_Summary_1.pdf" class="button">Tournament Overview</a>
+        <div class="game-card">
+            <img src="../Assets/GameCards/mvc3.webp" alt="Ultimate Marvel vs Capcom 3">
+            <div class="game-info">
+                <h3>Street Fighter 6</h3>
+                <p class = "extra-card-info">Prize Pool: TBD</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="../Assets/GameCards/gear.webp" alt="Guilty Gear -Strive">
+            <div class="game-info">
+                <h3>Guilty Gear -Strive</h3>
+                <p class = "extra-card-info">Prize Pool: TBD</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="../Assets/GameCards/brawl.webp" alt="Super Smash Bros. Brawl">
+            <div class="game-info">
+                <h3>Super Smash Bros. Brawl</h3>
+                <p class = "extra-card-info">Prize Pool: TBD</p>
+                <p class = "extra-card-info">Format: Double Elimination</p>
+            </div>
+        </div>
     </div>
-    <footer class="footer">
+
+        <div class="trailer-section">
+            <h2 style="color: white; margin-bottom: 2rem;">Tournament Trailer</h2>
+            <div class="trailer-container">
+                <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+                <embed 
+                    src="https://www.youtube.com/embed/E5OvDVKyHIE"
+                    title="Beak Bonk 2025 Tournament Trailer"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </embed>
+            </div>
+        </div>
+        
+        <div class="info-section">
+
+            <div class="registration-container">
+                <h2>Registration is Live!</h2>
+                <p>Secure your spot in Beak Bonk 2025's premier gaming event</p>
+                <p>Early bird pricing available for a limited time</p>
+                <a href="https://www.start.gg/tournament/beak-bonk-2025/" class="register-button">Register Now</a>
+            </div>
+            
+            <div class="social-updates">
+                <h2>Stay in the Loop</h2>
+                <p>Don't miss important announcements, bracket updates, and community highlights</p>
+                <a href="https://x.com/Beak_Bonk" class="social-button"  target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                    </svg>
+                    Follow on X
+                </a>
+            </div>
+        </div>
+        <div class="sponsors-section">
+            <h2>Our Amazing Sponsors</h2>
+            <div class="section-divider"></div>
+            <div class="sponsors-container">
+                <img 
+                    src="../Assets/BB25/sponsors-logo.png" 
+                    alt="Beak Bonk 2025 Sponsors" 
+                    class="sponsors-image"
+                >
+            </div>
+        </div>
+    <footer>
         <p>&copy; 2024 Palouse Gaming. All rights reserved.</p>
+        <a href="../Assets/BB24/BeakBonk2024_Summary_1.pdf" target="_blank" class="financials-button">BB24 Financials</a>
     </footer>
+
     <script src="../hamburger.js"></script>
 </body>
 </html>
